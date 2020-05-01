@@ -36,6 +36,10 @@ class PreProcessing:
         X = []
         y = []
         for directory in os.listdir(self.data_src):
+            if directory.startswith("."):
+                continue
+            if int(directory) > 50:
+                continue
             try:
                 for pic in os.listdir(os.path.join(self.data_src, directory)):
                     img = imread(os.path.join(self.data_src, directory, pic))
