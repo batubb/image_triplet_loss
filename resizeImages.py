@@ -52,8 +52,8 @@ avgWidth = int(sum(allWidths) / len(allWidths))
 minHeight = min(allHeights)
 minWidth = min(allWidths)
 
-customHeight = 10
-customWidth = 20
+customHeight = 50
+customWidth = 150
 size = avgWidth, avgHeight
 for dirName in os.listdir(topDir):
 	curFile = os.path.join(topDir, dirName)
